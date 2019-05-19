@@ -30,7 +30,7 @@
                     </div>
                     <div class="form-group">
                         <label for="image">Put a link here to a photo or drawing of yourself.</label>
-                        <input for ="image" class="form-control" id="friendmage" placeholder="Required">
+                        <input for ="image" class="form-control" id="friendPhoto" placeholder="Required">
                     </div>
                     <div class="form-group">
                         <label for="questionOne">Tact is just not saying true stuff. I'll pass.</label>
@@ -189,7 +189,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script>
+
         $(document).ready(function(){
+
 
             $("#surveyBtn").on("click", function(event) {
 
@@ -202,7 +204,7 @@
                 var photo = $("#friendPhoto").val().trim();
                 var questionOne = $("#questionOne").val().trim();
                 var questionTwo= $("#questionTwo").val().trim();
-                var questionThree = $("#questionThree").val().ltrim();
+                var questionThree = $("#questionThree").val().trim();
                 var questionFour = $("#questionFour").val().trim();
                 var questionFive = $("#questionFive").val().trim();
                 var questionSix = $("#questionSix").val().trim();
