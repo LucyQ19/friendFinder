@@ -7,23 +7,25 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Limelight&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/surveyStyle.css">
 
     <title>Survey Questions</title>
   </head>
   <body>
       
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid text-center" id="surveyHeader">
         <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <h1 class="display-4" id="surveyTitle">Survey Question</h1>
+                <p class="lead" id="surveyLead">Answer a few questions to find a friend with the greatest compatibility.</p>
         </div>
     </div>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <form>
+                <form method="POST" role="form">
                     <div class="form-group">
                         <label for="name">What's your name?</label>
                         <input type="name" class="form-control" id="friendName" placeholder="Required">
@@ -142,7 +144,7 @@
                                 <option value=5>5 (Strongly Agree)</option>
                             </select>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="surveyBtn">Submit</button>
+                    <button type="submit" class="btn btn-outline-dark btn-lg" id="surveyBtn">Submit</button>
                 </form>
             </div>
         </div>

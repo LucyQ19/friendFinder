@@ -1,24 +1,13 @@
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-body {
+#surveyHeader {
     background-image: url('../images/homeBackground.jpeg');
     background-size: cover;
-    
+    width: auto;
 }
 
-#homeHeader{
-    background: transparent;
-}
-
-#homeTitle {
+#surveyTitle {
     font-family: 'Limelight', cursive;
 }
 
-#homeLead {
+#surveyLead {
     font-weight: bolder;
-    font-size: 22px;
 }
