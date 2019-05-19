@@ -26,11 +26,11 @@
                 <form>
                     <div class="form-group">
                         <label for="name">What's your name?</label>
-                        <input type="name" class="form-control" id="formName" placeholder="Required">
+                        <input type="name" class="form-control" id="friendName" placeholder="Required">
                     </div>
                     <div class="form-group">
                         <label for="image">Put a link here to a photo or drawing of yourself.</label>
-                        <input for ="image" class="form-control" id="formImage" placeholder="Required">
+                        <input for ="image" class="form-control" id="friendmage" placeholder="Required">
                     </div>
                     <div class="form-group">
                         <label for="questionOne">Tact is just not saying true stuff. I'll pass.</label>
@@ -138,7 +138,7 @@
         </div>
     </div> 
 
-    <div id="resultsModal" class="modal fade" tabindex="-1" role="dialog">
+    <div id="bestFriendModal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -149,8 +149,29 @@
             </div>
 
             <div class="modal-body">
-              <h2 id="matchFriend"></h2>
-              <img id="matchPhoto" src="" alt="Friend Match">
+              <p id="bestFriend"></p>
+              <img id="bestFriendPhoto">
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="errorModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Error Message!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <p id="errorAction"></p>
             </div>
 
             <div class="modal-footer">
@@ -168,82 +189,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script>
-        var allFieldsAnswered;
 
-        $(document).ready(function() {
-
-            $("#surveyBtn").on("click", function(){
-                checkIfAnswer(function() {
-
-                    if(allFieldsAnswered) {
-                        collectData();
-                    } else {
-                        alert("Please answer all fields before submitting!")
-                    }
-                });
-            });
         
-        
-        function checkIfAnswer(callback) {
-            var questionsAnswered;
-
-            $(".chosen-select").each(function(){
-
-                if ($(this).val() === ""){
-                    questionsAnswered = false;
-                }
-
-            }).promise().done(function() {
-                if (questionsAnswered === false) {
-                    allFieldsAnswered = false;
-
-                } else if ($("#formName").val().trim() === ""){
-                    allFieldsAnswered = false;
-
-                } else {
-                    allFieldsAnswered = true
-                }
-
-                callback();
-
-            });
-        }
-
-        function collectData() {
-
-            var newFriend = {
-                name: $("#formName").val().trim(),
-                photo: $("#formImage"),
-                scores: []
-            };
-
-            var scoresArray = [];
-
-           $(".chosen-select").each(function() {
-               scoresArray.push(parseInt($(this).val()));
-
-           }).promise().done(function(){
-
-               console.log("scoresArray", scoresArray);
-
-            newFriend.scores = scoresArray;
-
-            var currentURL = window.location.origin;
-
-            $.post(currentURL + "/api/friends", newFriend, function(data){
-
-                $("#matchFriend").text(data.name);
-
-                $("#matchPhoto").attr("src", data.photo);
-
-                $("#resultsModal").modal("toggle");
-
-            });
-
-           }); 
-        }
-
-    });
 
     </script>
   </body>
