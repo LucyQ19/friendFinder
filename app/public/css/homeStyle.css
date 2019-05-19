@@ -16,10 +16,9 @@ body {
 
 #mainTitle {
     font-family: 'Limelight', cursive;
-    color: #ffffff;
 }
 
 #mainLead {
-    color: #ffffff;
+    font-weight: bolder;
     font-size: 22px;
 }
