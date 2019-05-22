@@ -18,7 +18,7 @@ module.exports = function(app) {
         var newFriend = req.body;
         var newFriendName = req.body.name;
         var newFriendPhoto = req.body.photo;
-        var newFriendScore = req.body.scores;
+        var newFriendScores = req.body.scores;
 
         console.log(newFriend);
 
@@ -30,7 +30,7 @@ module.exports = function(app) {
 
             for (var j = 0; i < friendsData[i].scores.length; j++) {
                 totalDifference += Math.abs(parseInt(newFriendScores[j]) - parseInt(friendsData[i].scores[j]));
-            
+                console.log(totalDifference);
 
             if (totalDifference < bestFriend.scoreDifference) {
 
