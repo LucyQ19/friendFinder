@@ -24,8 +24,9 @@ main {
 }
 
 #homeLead {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 28px;
     font-weight: bolder;
-    font-size: 22px;
 }
 
 #homeFooter {
@@ -33,6 +34,6 @@ main {
     color: #ffffff;
 }
 
-#footerLink {
+#homeFooterLink {
     color: #ffffff;
 }

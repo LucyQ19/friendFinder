@@ -1,7 +1,10 @@
+#surveyMain {
+    background-color: #ffffff;
+    position: center;
+}
+
 #surveyHeader {
-    background-image: url('../images/homeBackground.jpeg');
-    background-size: cover;
-    width: auto;
+    background-color: #ffffff;
 }
 
 #surveyTitle {
@@ -9,5 +12,16 @@
 }
 
 #surveyLead {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 24px;
     font-weight: bolder;
+}
+
+label {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 22px;
+}
+
+#surveyFooterLinks {
+    color: #000000;
 }
