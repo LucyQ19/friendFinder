@@ -1,4 +1,4 @@
-const friendsData = [
+const friends = [
     {
         name: "Buffy",
         photo: "https://media.giphy.com/media/Xw1pNLan8ma3K/giphy.gif",
@@ -31,4 +31,4 @@ const friendsData = [
     }
     ];
     
-    module.exports = friendsData;
+    module.exports = friends;
