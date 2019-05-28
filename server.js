@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 8080;
 
 app.use(express.static(__dirname + "/app/css"));
 app.use(express.static(__dirname + "/app/images"));
+app.use(express.static(__dirname + "/app/javascript"));
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
