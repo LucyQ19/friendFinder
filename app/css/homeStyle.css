@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    background-image: url('../images/homeBackground.jpeg');
+    background-image: url('/homeBackground.jpeg');
     background-size: cover;
     display: flex;
     flex-direction: column;
