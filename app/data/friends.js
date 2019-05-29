@@ -1,13 +1,15 @@
 const friendsData = [
     {
-        name: "Buffy",
-        photo: "https://media.giphy.com/media/Xw1pNLan8ma3K/giphy.gif",
-        scores: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
-    },
-    {
         name: "Angel",
         photo: "https://media.giphy.com/media/3vJizKG7cZYvm/giphy.gif", 
         scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+    },
+    {
+        name: "Cordelia",
+        photo: "https://media.giphy.com/media/xrb60V4E9DjbO/giphy.gif",
+        scores: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+
     },
     {
         name: "Willow",
@@ -20,11 +22,13 @@ const friendsData = [
         scores: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
     },
     {
-        name: "Cordelia",
-        photo: "https://media.giphy.com/media/xrb60V4E9DjbO/giphy.gif",
-        scores: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+        name: "Buffy",
+        photo: "https://media.giphy.com/media/Xw1pNLan8ma3K/giphy.gif",
+        scores: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+
     },
     {
+
         name: "Spike",
         photo: "https://media.giphy.com/media/hhtxFi9SjKeHu/giphy.gif",
         scores: [4, 3, 4, 1, 1, 5, 4, 3, 5, 1]
