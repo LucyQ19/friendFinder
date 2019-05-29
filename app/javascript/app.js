@@ -5,6 +5,7 @@ $(document).ready(function(){
         event.preventDefault();
 
         var formValid = true;
+
         console.log("Survey submitted!");
 
         var name = $("#friendName").val().trim();
@@ -23,7 +24,7 @@ $(document).ready(function(){
         var newFriend = {
             "name": name,
             "photo": photo,
-            "score": [
+            "scores": [
                 questionOne,
                 questionTwo,
                 questionThree,
@@ -69,18 +70,18 @@ $(document).ready(function(){
 
                 $("#bestFriendModal").modal("show");
 
-                $("#friendName").val("");
-                $("#friendPhoto").val("");
-                $("#questionOne").val("");
-                $("#questionTwo").val("");
-                $("#questionThree").val("");
-                $("#questionFour").val("");
-                $("#questionFive").val("");
-                $("#questionSix").val("");
-                $("#questionSeven").val("");
-                $("#questionEight").val("");
-                $("#questionNine").val("");
-                $("#questionTen").val("");
+                $("#friendName").val("Choose . . .");
+                $("#friendPhoto").val("Choose . . .");
+                $("#questionOne").val("Choose . . .");
+                $("#questionTwo").val("Choose . . .");
+                $("#questionThree").val("Choose . . .");
+                $("#questionFour").val("Choose . . .");
+                $("#questionFive").val("Choose . . .");
+                $("#questionSix").val("Choose . . .");
+                $("#questionSeven").val("Choose . . .");
+                $("#questionEight").val("Choose . . .");
+                $("#questionNine").val("Choose . . .");
+                $("#questionTen").val("Choose . . .");
 
             });
         }

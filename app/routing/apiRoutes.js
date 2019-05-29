@@ -1,45 +1,52 @@
-const friends = require("../data/friends.js");
+const friendsData = require("../data/friends.js");
 
 
 module.exports = function(app) {
 
     app.get("api/friends", function(req, res) {
 
-        res.json(friends);
+        res.json(friendsData);
     });
 
     app.post("/api/friends", function(req, res) {
-        console.log(req.body.scores);
+        
+        var bestFriend = {
+            name: "",
+            photo: "",
+            scoreDifference: 200
+        };
 
-        var user = req.body;
+        newFriend = req.body
+        newFriendName = req.body.photo;
+        newFriendPhoto = req.body.photo;
+        newFriendScores = req.body.scores;
 
-        for(var i = 0; i < user.scores.length; i++) {
-            user.scores[i] = parseInt(user.scores[i]);
+        console.log(newFriend);
+
+        var totalDifference = 0;
+
+        for(var i = 0; i < friendsData.length; i++) {
+            console.log(`Your new Best Friend is: ${friendsData[i].name}`);
+
+            for(var j = 0; j < friendsData[i].scores.length; j++) {
+                totalDifference += Math.abs(parseInt(newFriendScores[j]) - parseInt(friendsData[i].scores[j]));
+
+                if(totalDifference < bestFriend.scoreDifference) {
+                    bestFriend.name = friendsData[i].name;
+                    bestFriend.photo = friendsData[i].photo;
+                    bestFriend.scoreDifference = totalDifference;
+
+                    console.log(`Your Best Friend is: ${bestFriend.name}`);
+                }
+            }
+
+                console.log(`Difference in scores: ${ totalDifference}`);
         }
 
-        var bestFriendIndex = 0; 
-        
-        var minimumDifference = 40;
+            friendsData.push(newFriend);
 
-        for(var i = 0; i < friends.length; i++) {
-            var totalDifference = 0;
-
-            for(var j = 0; j < friends[i].scores.length; j++) {
-                var difference = Math.abs(user.scores[j] - friends[i].scores[j]);
-                totalDifference += difference;
-            }
-
-            if(totalDifference < minimumDifference) {
-                bestFriendIndex = i;
-                minimumDifference = totalDifference;
-            }
-         }
-
-         friends.push(user);
-
-         res.json(friends[bestFriendIndex]);
-
-
+            res.json(bestFriend);
+       
     });
   
 }
