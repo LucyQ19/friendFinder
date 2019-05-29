@@ -49,7 +49,7 @@ $(document).ready(function(){
 
         else if (newFriend.photo === "") {
             $("#errorMessage").text("No photo provided.");
-            $("#errorAction").text("Please! Provide a link to a photo or drawing of yourself in the correct field to continue.");
+            $("#errorAction").text("Please! Provide a link to a photo of yourself in the correct field to continue.");
             $("#errorModal").modal("show");
             return false;
         }
