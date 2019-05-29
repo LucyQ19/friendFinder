@@ -13,7 +13,7 @@ module.exports = function(app) {
         var bestFriend = {
             name: "",
             photo: "",
-            scoreDifference: 1000
+            scoreDifference: 40
         };
 
         newFriend = req.body
