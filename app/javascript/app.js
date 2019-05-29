@@ -70,8 +70,8 @@ $(document).ready(function(){
 
                 $("#bestFriendModal").modal("show");
 
-                $("#friendName").val("Choose . . .");
-                $("#friendPhoto").val("Choose . . .");
+                $("#friendName").val("");
+                $("#friendPhoto").val("");
                 $("#questionOne").val("Choose . . .");
                 $("#questionTwo").val("Choose . . .");
                 $("#questionThree").val("Choose . . .");
