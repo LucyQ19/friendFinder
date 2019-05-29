@@ -8,23 +8,23 @@ const friendsData = [
     {
         name: "Cordelia",
         photo: "https://media.giphy.com/media/xrb60V4E9DjbO/giphy.gif",
-        scores: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+        scores: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
 
     },
     {
         name: "Willow",
         photo: "https://media.giphy.com/media/fQdNfaQ4OkcAo/giphy.gif",
-        scores: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+        scores: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
     },
     {
         name: "Xander",
         photo: "https://media.giphy.com/media/E94REluJhW05G/giphy.gif",
-        scores: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+        scores: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
     },
     {
         name: "Buffy",
         photo: "https://media.giphy.com/media/Xw1pNLan8ma3K/giphy.gif",
-        scores: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+        scores: [90, 90, 90, 90, 90, 90, 90, 90, 90, 90]
 
     },
     {
