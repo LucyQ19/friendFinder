@@ -1,6 +1,6 @@
 # friendFinder
 
-![Image of frienderFinder](./app/images/eatDaBurger.png)
+![Image of frienderFinder](./app/images/friendFinder.png)
 
 ### About this App:
 
