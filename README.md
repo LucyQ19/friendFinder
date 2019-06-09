@@ -13,6 +13,15 @@ friendFinder matches users to new friends based on their answers to a ten questi
 * Body-Parser, and 
 * Heruko.
 
+### Setup the Local Environment of this App:
+
+To use friendFinder web application from your local environment,
+
+1. Clone my repo using the command line.
+2. Change the directory to the cloned repo.
+3. Install all required NPM packages.
+4. Start the application server using the command line.
+
 ### Thank you for visiting my GitHub!
 
 Enjoy using my Heroku-deployed version here: https://pure-reef-62124.herokuapp.com/
