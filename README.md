@@ -22,7 +22,7 @@ To use friendFinder web application from your local environment,
 1. Clone my repo using the command line.
 2. Change the directory to the cloned repo.
 3. Install all required NPM packages.
-4. Start the application server on the command linen by typing node server.js.
+4. Start the application server on the command line by typing node server.js.
 5. Access it locally on your browser at the URL: localhost:3000
 
 ### Thank you for visiting my GitHub!
