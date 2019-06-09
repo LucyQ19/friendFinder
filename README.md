@@ -1,8 +1,10 @@
 # friendFinder
 
+![Image of frienderFinder](./app/images/eatDaBurger.png)
+
 ### About this App:
 
-friendFinder matches users to new friends based on their answers to a ten question survey, inspired by the 90's TV show <em>Buffy the Vampire Slayer</em>.  This app takes in users' answers, compares them with other user's , and gives a name and photo of a new friend for the user with the best overall compatibility.
+friendFinder matches users to new friends based on their answers to a ten question survey, inspired by the 90's TV show <em>Buffy the Vampire Slayer</em>.  This app takes in users' answers, compares them with other user's , and gives a name and photo of a new friend for the user with the greatest compatibility.
 
 ### Packages and Technologies Used for this App:
 
