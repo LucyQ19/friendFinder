@@ -4,8 +4,8 @@
   "description": "ffriendFinder matches users to new friends based on their answers to a ten question survey, inspired by the 90's TV show <em>Buffy the Vampire Slayer</em>.  This app takes in user's answers, compares them with other users' answers , and gives the user a name and photo of a new friend with the greatest compatibility.",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.0",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "path": "^0.12.7"
   },
   "devDependencies": {},
